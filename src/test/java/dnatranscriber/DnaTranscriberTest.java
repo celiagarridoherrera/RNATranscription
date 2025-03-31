@@ -34,4 +34,18 @@ public class DnaTranscriberTest {
         assertEquals("C", result);
     }
 
+    @Test
+    public void testStringComplete() {
+        DnaTranscriber transcriber = new DnaTrascriber();
+        String result = transcriber.transcribe("GCTA");
+        assertEquals("CGAU", result);
+    }
+
+    @Test
+    public void testStringEmpty() {
+        DnaTranscriber transcriber = new DnaTrascriber();
+        String result = transcriber.transcribe("");
+        assertEquals("", result);
+    }
+
 }
