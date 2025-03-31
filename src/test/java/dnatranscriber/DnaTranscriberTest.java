@@ -11,8 +11,6 @@ public class DnaTranscriberTest {
         DnaTranscriber transcriber = new DnaTrascriber();
         String result = transcriber.transcribe("G");
         assertEquals("C", result);
-
-        
     }
 
 
