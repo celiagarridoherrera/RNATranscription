@@ -13,5 +13,18 @@ public class DnaTranscriberTest {
         assertEquals("C", result);
     }
 
+        @Test
+    public void testCtoG() {
+        DnaTranscriber transcriber = new DnaTrascriber();
+        String result = transcriber.transcribe("C");
+        assertEquals("G", result);
+    }
+
+    @Test
+    public void testTtoA() {
+        DnaTranscriber transcriber = new DnaTrascriber();
+        String result = transcriber.transcribe("G");
+        assertEquals("C", result);
+    }
 
 }
